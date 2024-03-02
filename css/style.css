@@ -1,0 +1,106 @@
+/* ======= Common Styles Start ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "mulish";
+}
+:root {
+  --primary: #131318;
+  --secondary: #ff5400;
+  --navLink: #424247;
+  --paragraphColor: #5a5a5d;
+  --textColor: rgba(19, 19, 24, 0.7);
+  --weite: #fff;
+  --footerBg: rgba(19, 19, 24, 0.05);
+  --headingSize: 40px;
+  --paragraphSize: 16px;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.heading {
+  color: var(--primary);
+  font-size: var(--headingSize);
+  font-weight: 800;
+}
+.sub_heading {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 800;
+}
+.paragraph {
+  color: var(--paragraphColor);
+  font-size: var(--paragraphSize);
+  font-weight: 400;
+  line-height: 26px;
+}
+/* ======= Common Styles End ====== */
+
+/* ====== Navbar style start ====== */
+.navbar {
+  padding: 48px 0;
+}
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.logo_img {
+  height: 56px;
+  width: 48px;
+  overflow: hidden;
+}
+/* .logo_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+.logo_text h2 {
+  color: var(--primary);
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.logo_text span {
+  color: var(--secondary);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+.menu ul li a {
+  color: var(--navLink);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: all ease-out 0.3s;
+}
+.menu ul li a:hover {
+  color: var(--secondary);
+}
+.bars {
+  color: var(--primary);
+  font-size: 24px;
+  display: none;
+}
+/* ====== Navbar style end ====== */

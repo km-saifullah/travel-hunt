@@ -1,0 +1,31 @@
+/* ====== Navbar Responsive CSS Start ====== */
+@media (max-width: 576px) {
+  .nav_wrapper {
+    padding: 0 15px;
+  }
+  .menu {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .logo_text h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .nav_wrapper {
+    padding: 0 15px;
+  }
+  .menu {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .logo_text h2 {
+    font-size: 22px;
+  }
+}
+
+/* ====== Navbar Responsive CSS End ====== */
