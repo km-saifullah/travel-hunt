@@ -11,7 +11,7 @@
   --navLink: #424247;
   --paragraphColor: #5a5a5d;
   --textColor: rgba(19, 19, 24, 0.7);
-  --weite: #fff;
+  --white: #fff;
   --footerBg: rgba(19, 19, 24, 0.05);
   --headingSize: 40px;
   --paragraphSize: 16px;
@@ -31,11 +31,13 @@ ol {
   color: var(--primary);
   font-size: var(--headingSize);
   font-weight: 800;
+  text-transform: capitalize;
 }
 .sub_heading {
   color: var(--primary);
   font-size: 24px;
   font-weight: 800;
+  text-transform: capitalize;
 }
 .paragraph {
   color: var(--paragraphColor);
@@ -64,11 +66,6 @@ ol {
   width: 48px;
   overflow: hidden;
 }
-/* .logo_img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
 .logo_text h2 {
   color: var(--primary);
   font-size: 36px;
@@ -103,4 +100,175 @@ ol {
   font-size: 24px;
   display: none;
 }
-/* ====== Navbar style end ====== */
+.common_btn {
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 34px;
+  outline: none;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.common_btn:hover {
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
+/* ====== Navbar Style End ====== */
+
+/* ====== Banner Style Start ====== */
+.banner_wrapper {
+  background: linear-gradient(#131318, rgba(19, 19, 24, 0)),
+    url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 106px 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero_title {
+  color: var(--white);
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+}
+.hero_text {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  padding: 24px 0 48px 0;
+}
+.banner_form {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 24px;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+.form_input {
+  height: 52px;
+  width: 174px;
+  padding: 0 16px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.form_input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+/* ====== Banner Style End ====== */
+
+/* ====== Popular Tour Style Start ====== */
+.popular_tour {
+  padding: 100px 0;
+}
+.tour_wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 45px;
+}
+.popularTour_info {
+  width: 577px;
+}
+.popularTour_info p {
+  padding: 24px 0;
+}
+.popularTour_info ul {
+  list-style: disc;
+}
+.popularTour_info ul li {
+  padding-bottom: 16px;
+}
+.popular_img {
+  width: 540px;
+  height: 550px;
+  overflow: hidden;
+}
+.popular_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* ====== Popular Tour Style End ====== */
+
+/* ====== Destination Style Start ====== */
+.destination_one {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.destination_country {
+  padding: 132px 226px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+.maldives {
+  background: url("../images/maldives.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.indonesia {
+  background: url("../images/indonesia.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.destination_two {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.srilanka {
+  height: 286px;
+  width: 374px;
+  background: url("../images/srilanka.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.north_america {
+  height: 286px;
+  width: 474px;
+  background: url("../images/north_america.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.kashmir {
+  height: 286px;
+  width: 274px;
+  background: url("../images/kashmir.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.maldives h3,
+.indonesia h3,
+.srilanka h3,
+.north_america h3,
+.kashmir h3 {
+  color: var(--white);
+}
+
+/* ====== Destination Style End ====== */
