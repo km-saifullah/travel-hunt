@@ -212,63 +212,170 @@ ol {
 /* ====== Popular Tour Style End ====== */
 
 /* ====== Destination Style Start ====== */
-.destination_one {
+.destination {
+  padding-bottom: 100px;
+}
+.destination_item1 {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
+  column-gap: 24px;
+  padding-bottom: 24px;
 }
-.destination_country {
-  padding: 132px 226px;
+.common_div {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 573px;
+  height: 300px;
+}
+.maldives,
+.indonesia,
+.srilanka,
+.north_america,
+.kashmir,
+.bangladesh,
+.bandarban {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 132px 226px; */
   border-radius: 16px;
 }
+.country_name {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: normal;
+}
 .maldives {
-  background: url("../images/maldives.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/maldives.png");
 }
 .indonesia {
-  background: url("../images/indonesia.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.destination_two {
-  margin-top: 24px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+  background-image: url("../images/indonesia.png");
 }
 .srilanka {
+  background-image: url("../images/srilanka.png");
   height: 286px;
   width: 374px;
-  background: url("../images/srilanka.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .north_america {
+  background-image: url("../images/north_america.png");
   height: 286px;
   width: 474px;
-  background: url("../images/north_america.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .kashmir {
-  height: 286px;
-  width: 274px;
-  background: url("../images/kashmir.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/kashmir.png");
+  height: 300px;
+  width: 473px;
 }
-.maldives h3,
-.indonesia h3,
-.srilanka h3,
-.north_america h3,
-.kashmir h3 {
-  color: var(--white);
+.bangladesh {
+  background-image: url("../images/bangladesh.png");
+  height: 300px;
+  width: 473px;
+}
+.bandarban {
+  background-image: url("../images/bandarban.png");
+  height: 300px;
+  width: 673px;
 }
 
 /* ====== Destination Style End ====== */
+
+/* ===== ==Discount Section Style Start ===== */
+.discount {
+  padding-bottom: 100px;
+}
+.discount_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.discount_heading p {
+  width: 643px;
+}
+.discount_wrapper {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.discount_item {
+  width: 1170px;
+  padding: 56px;
+  background-image: url("../images/swimming_pool.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.discount_item2 {
+  width: 1170px;
+  padding: 56px;
+  background-image: url("../images/pool2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.discount_item3 {
+  width: 1170px;
+  padding: 56px;
+  background-image: url("../images/swimming_pool.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.discount_info {
+  width: 579px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 50px;
+}
+.tour_info {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+.tour_day {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+#tour_icon {
+  font-size: 24px;
+  color: var(--secondary);
+}
+.tour_detail {
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.discount_details h3 {
+  padding-top: 24px;
+}
+.discount_details p {
+  width: 452px;
+}
+.cost {
+  padding-bottom: 24px;
+  color: var(--secondary);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: normal;
+}
+/* ======= Discount Section Style End ======== */
